@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <title>WebGL DAWIN</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body onload='main()'>
+      <div>
+        <div>
+          <canvas id='dawin-webgl'>
+            Utilisez un navigateur compatible avec WebGL.
+          </canvas>
+        
+        </div>
+
+        <div class='controle'>
+          <h3>========= Contrôle ========</h1>
+          <h4>Translation</h4>
+
+          
+          <div>
+            <label>tx</label>
+            <input class='slider' type="range" value="0" min="-10" max="10" step="0.1" id="xTSlider">
+          </div>
+
+          <div>
+            <label>ty</label>
+            <input class='slider' type="range" value="0" min="-10" max="10" step="0.1" id="yTSlider">
+          </div>
+         
+          <div>
+            <label>tz</label>
+            <input class='slider' type="range" value="0" min="-10" max="10" step="0.1" id="zTSlider">
+          </div>
+
+          <h4>Rotation</h4>
+
+          <div>
+            <label>rx</label>
+            <input class='slider' type="range" value="0" min="-3.14" max="3.14" step="0.01" id="xRSlider">
+          </div>
+       
+          <div>
+            <label>ry</label>
+            <input class='slider' type="range"  value="0" min="-3.14" max="3.14" step="0.01" id="yRSlider">
+          </div>
+
+          <div>
+            <label>rz</label>  
+            <input class='slider' type="range" value="0" min="-3.14" max="3.14" step="0.01" id="zRSlider">
+          </div>
+
+          <h4>Camera</h4>
+
+          <div>
+            <label>zoom</label>
+            <input class='slider2' type="range" value="0.8" min="0.1" max="5" step="0.1" id="ZoomSlider">
+          </div>
+
+          <div>
+            <label>perspective</label>
+            <input class='slider2' type="range" value="75" min="30" max="120" step="1" id="PerspectiveSlider">
+          </div>
+
+        </div>
+    </div>
+
+    <script src='gl-matrix-min.js'></script>
+    <script src='iro.min.js'></script>
+    <script src='main.js'></script>
+  </body>
+</html>
